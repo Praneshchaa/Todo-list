@@ -1,0 +1,144 @@
+$Light-color: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+$Dark-color: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
+$Font: sans-serif;
+$button-color: #8e49e8; 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../images/mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    //background: $Dark-color;
+    font-family: $Font;
+    
+
+}
+
+.wrapper {
+    background: rgba(255,255,255,0.4);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+    margin: 120px auto;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    display: grid;
+    justify-content: space-around;
+    
+    
+    
+
+
+    header {
+        font-size: 30px;
+        font-weight: 670;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;  
+    }
+// break
+
+    .emptyField {
+        display: flex;
+        justify-content: space-around;
+        height: 45px;
+        width: 100%;
+        margin: 20px auto;
+        
+        
+        
+        
+    
+
+     input {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        outline: none;
+        padding-left: 15px;
+        
+            
+    }
+
+     button {
+        cursor: pointer;
+        width: 15%;
+        background: $button-color;
+        border-radius: 4px; 
+        color: white;     
+
+       
+    }
+    }
+// break
+    .todolist {
+        max-height: 300px;
+        overflow-y: auto;
+        
+        
+        
+        li {list-style: none;
+            padding: 15px;
+            position: relative;
+            right: 10px;
+            background: $Dark-color;
+            margin-bottom: 10px;
+            margin-left: 11px;
+            width: 100%;
+            border-radius: 5px;
+            text-align: center;
+            overflow:unset;
+            
+            
+            
+            
+        }
+
+        li span {
+            position: absolute;
+            right: 2px;
+            cursor: pointer;
+            //background: rgb(236, 212, 181);
+            border-radius: 5px;
+            padding: 3px;
+            top: 10px;
+            text-align: center;
+            transition: all 1s ease;
+            
+            
+            
+        }
+        li:hover span{
+            right: 199px;
+        }
+        
+    }
+//break
+
+.clearButton {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 5px #bac3c3;
+    background: rgb(255, 234, 234);
+    margin-top: 15px;
+    margin-left: 80px;
+    
+    
+    
+    
+    
+
+}
+
+}
+
+
